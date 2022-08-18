@@ -112,7 +112,11 @@ p {
     padding-left: 15px;
     padding-right: 15px;
 }
-article:not(:nth-last-child) {
+article {
+    padding-bottom: 20px;
+    transition: all 0.3s;
+}
+article:not(nth-last-child) {
     margin-bottom: 30px;
 }
 main {
@@ -120,9 +124,11 @@ main {
 }
 article:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s;
 }
 article:hover h3 {
     color: #2196F3;
+    transition: color 0.3s;
 }
 
 .footer {
